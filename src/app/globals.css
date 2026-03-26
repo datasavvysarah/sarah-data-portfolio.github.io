@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #09090b; /* zinc-950 */
+  --font-sans: var(--font-inter);
+}
+
+:root {
+  --background: #09090b;
+  --foreground: #f8fafc;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide Next.js 15 dev indicator */
+nextjs-portal {
+  display: none !important;
+}
